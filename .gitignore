@@ -1,0 +1,6 @@
+.venv
+test_image
+training_dir
+biometric_auth.log
+biometric_db.pkl
+rename.py
