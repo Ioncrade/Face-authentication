@@ -68,13 +68,35 @@ This Python-based biometric authentication system combines facial and iris recog
  │    └── image2.jpg
  └── user2/
       └── image1.jpg
- ```
-
-    
+ ```    
 Run the following command to start optimization:
-
-  ```bash
+  ```
     python main.py optimize --training_dir /path/to/training_images --epochs 100 --batch_size 32
+  ```
+6. **Deleting a User**
+   Remove an enrolled user from the database:
+  ```
+    python main.py delete-user --user_id john_doe
+  ```
 
+## Project structure
+1. **main.py:**
+   Contains the core classes and functions:
+
+- BiometricDatabase – Handles the saving and retrieval of biometric templates.
+- FeatureExtractor – Detects faces, eyes, and extracts facial and iris features.
+- CuckooSearchOptimizer – Implements the Cuckoo Search algorithm for parameter optimization.
+- BiometricAuthenticator – Provides enrollment, verification, and parameter optimization functionality.
+- Command-line interface to manage user enrollment, verification, optimization, listing, and deletion.
+
+2. **biometric_db.pkl:**
+   (Automatically created) Database file that stores enrolled users' biometric templates.
+
+3. **biometric_auth.log:**
+   Log file where system operations and errors are recorded.
+
+## Our Result
+Below is an image placeholder representing our authentication system results
+![WhatsApp Image 2025-03-30 at 12 02 09_23466497](https://github.com/user-attachments/assets/a154fbe4-f595-45e4-bc74-c68a25f3ef58)
 
 
