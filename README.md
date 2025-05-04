@@ -95,8 +95,20 @@ Run the following command to start optimization:
 3. **biometric_auth.log:**
    Log file where system operations and errors are recorded.
 
-## Our Result
+## Our Results
 Below is an image placeholder representing our authentication system results
 ![WhatsApp Image 2025-03-30 at 12 02 09_23466497](https://github.com/user-attachments/assets/a154fbe4-f595-45e4-bc74-c68a25f3ef58)
+
+Comparison between ArcFace and Our Facenet CS | BA model 
+
+**Metrics used**
+- Error rates comparison (FAR at FRR targets and FRR at FAR targets, plus EER)
+- Accuracy at optimal threshold
+- Area Under ROC Curve (AUC)
+- ROC curve comparison showing the trade-off between True Positive Rate and False Positive Rate
+   
+![face_recognition_comparison](https://github.com/user-attachments/assets/5eb125ab-a7fe-440c-99ec-1e3346764165)
+
+   
 
 
